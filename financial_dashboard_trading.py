@@ -52,7 +52,8 @@ if choice == '大台指期貨2024.12到期: 2023.12 至 2024.4.11':
     df_original = load_data('kbars_TXF202412_2023-12-21-2024-04-11.pkl')
 if choice == '小台指期貨2024.12到期: 2023.12 至 2024.4.11':
     df_original = load_data('kbars_MXF202412_2023-12-21-2024-04-11.pkl')
-
+if choice == '富邦: 2022.1.1 至 2024.1.1':
+    df_original = load_data('kbars_0015_2022-01-01-2024-01-01.pkl')
 
 
 ###### 選擇資料區間
@@ -66,7 +67,8 @@ if choice == '大台指期貨2024.12到期: 2023.12 至 2024.4.11':
 if choice == '小台指期貨2024.12到期: 2023.12 至 2024.4.11':
     start_date = st.text_input('輸入開始日期(日期格式: 2023-12-21), 區間:2023-12-21 至 2024-04-11', '2023-12-21')
     end_date = st.text_input('輸入結束日期 (日期格式: 2024-04-11), 區間:2023-12-21 至 2024-04-11', '2024-04-11')
-
+if choice == '富邦: 2022.1.1 至 2024.1.1':
+    df_original = load_data('kbars_0015_2022-01-01-2024-01-01.pkl')
 
 
 start_date = datetime.datetime.strptime(start_date,'%Y-%m-%d')
